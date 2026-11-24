@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Wellness Clinic | Doctor Appointment</title>
+</head>
+<body id="top">
+    <header>
+        <h1>🏥 Sunshine Wellness Clinic</h1>
+        <p><em>Compassionate care, modern medicine, and easy online booking.</em></p>
+        
+        <nav aria-label="Main Navigation">
+            <a href="#doctors">👨‍⚕️ Meet Our Doctors</a> | 
+            <a href="#schedule">🕒 Clinic Timings</a> | 
+            <a href="#booking-form">📅 Book Now</a> | 
+            <a href="#wellness-media">🎥 Health Media</a> | 
+            <a href="tel:+911234567890">📞 Emergency Call</a> | 
+            <a href="mailto:clinic@example.com">✉️ Email Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+
+    <main>
+
+        <section id="schedule">
+            <h2>🩺 Doctor Availability & Consultation Fees</h2>
+            <p>Check our specialists' schedules before booking, or <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">📍 get directions on Google Maps</a>.</p>
+
+            <table border="1" >
+                <caption><strong>Weekly Specialist Timetable (2026)</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Doctor Name</th>
+                        <th>Specialty</th>
+                        <th>Available Days</th>
+                        <th>Timings</th>
+                        <th>Consultation Fee</th>
+                        <th>Quick Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Dr. Ananya Sharma</strong></td>
+                        <td>General Physician (Fever & Cold)</td>
+                        <td>Mon – Sat</td>
+                        <td>9:00 AM – 1:00 PM</td>
+                        <td>₹500</td>
+                        <td><a href="#booking-form">Book Dr. Sharma</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dr. Rohan Verma</strong></td>
+                        <td>Pediatrician</td>
+                        <td>Tue, Thu, Sat</td>
+                        <td>4:00 PM – 8:00 PM</td>
+                        <td>₹700</td>
+                        <td><a href="#booking-form">Book Dr. Verma</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dr. Meera Nair</strong></td>
+                        <td>ENT Specialist</td>
+                        <td>Mon, Wed, Fri</td>
+                        <td>10:00 AM – 2:00 PM</td>
+                        <td>₹800</td>
+                        <td><a href="#booking-form">Book Dr. Nair</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br><hr>
+
+        <!-- SECTION: APPOINTMENT BOOKING FORM (SEMANTIC FIELDSETS + LINKS) -->
+        <section id="booking-form">
+            <h2>📅 Book Your Appointment</h2>
+            <p>Fill out the details below to reserve your slot.</p>
+
+            <form action="#confirmation" method="post">
+                <fieldset>
+                    <legend><strong>Patient Details</strong></legend>
+                    
+                    <label for="patient-name">Patient Full Name:</label><br>
+                    <input type="text" id="patient-name" name="patient_name" placeholder="e.g., Aarav Patel" required><br><br>
+                    
+                    <label for="patient-id">Patient ID (PIN):</label><br>
+                    <input type="password" id="patient-id" name="patient_id" placeholder="Enter 4-digit ID" required>
+                    <small><a href="mailto:support@example.com?subject=Forgot%20Patient%20ID">(Forgot Patient ID?)</a></small><br><br>
+
+                    <label for="doctor-select">Preferred Doctor:</label><br>
+                    <select id="doctor-select" name="doctor">
+                        <option value="sharma">Dr. Ananya Sharma (General Physician)</option>
+                        <option value="verma">Dr. Rohan Verma (Pediatrician)</option>
+                        <option value="nair">Dr. Meera Nair (ENT Specialist)</option>
+                    </select><br><br>
+                    
+                    <label for="appointment-date">Preferred Date:</label><br>
+                    <input type="date" id="appointment-date" name="appointment_date" required>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>Reason for Visit</strong></legend>
+                    
+                    <input type="radio" id="fever" name="reason" value="fever" checked>
+                    <label for="fever">🤒 Fever</label> 
+                    <small>(<a href="#fever-tips">Read home care tips while you wait</a>)</small><br><br>
+                    
+                    <input type="radio" id="cold" name="reason" value="cold">
+                    <label for="cold">🤧 Cold & Cough</label><br><br>
+
+                    <input type="radio" id="checkup" name="reason" value="checkup">
+                    <label for="checkup">🩺 Routine Health Checkup</label><br><br>
+
+                    <label for="notes">Additional Symptoms (Optional):</label><br>
+                    <textarea id="notes" name="notes" rows="3" cols="40" placeholder="Describe how long you've had symptoms..."></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">✅ Confirm Appointment</button>
+                <button type="reset">🔄 Clear Form</button>
+            </form>
+        </section>
+
+        <br><hr>
+
+        <!-- SECTION: MULTIMEDIA & HEALTH EDUCATION -->
+        <section id="wellness-media">
+            <h2>🎥 Clinic Tour & Wellness Media</h2>
+            
+            <figure>
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600" alt="Clean modern clinic waiting room" width="500">
+                <figcaption>Our sanitized, comfortable waiting lounge at Sunshine Wellness Clinic.</figcaption>
+            </figure>
+
+            <br>
+
+            <article>
+                <h3>🎧 Guided 1-Minute Relaxation Audio (While You Wait)</h3>
+                <p>Feeling anxious before your checkup? Listen to this calming breathing track:</p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>📺 Watch: How to Prepare for Your Doctor Visit</h3>
+                <video width="500" controls poster="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </section>
+
+        <br><hr>
+
+        <!-- ASIDE: SIDEBAR TIPS -->
+        <aside id="fever-tips">
+            <h3>💡 Quick Fever & Cold Care Tips</h3>
+            <details open>
+                <summary><strong>Click to toggle home remedies</strong></summary>
+                <ul>
+                    <li><strong>Stay Hydrated:</strong> Drink water, ORS, or clear warm broth every hour.</li>
+                    <li><strong>Rest Well:</strong> Avoid strenuous physical activity until your temperature normalizes.</li>
+                    <li><strong>Track Temperature:</strong> Note your readings every 4 hours to share with your doctor.</li>
+                </ul>
+            </details>
+            <p><a href="https://www.who.int" target="_blank" rel="noopener noreferrer">🌐 Learn more at the World Health Organization (WHO)</a></p>
+        </aside>
+
+    </main>
+
+    <hr>
+
+    <!-- 3. SEMANTIC FOOTER -->
+    <footer>
+        <address>
+            <strong>Sunshine Wellness Clinic</strong><br>
+            123 Health Avenue, Banjara Hills, Hyderabad, Telangana<br>
+            Phone: <a href="tel:+911234567890">+91 12345 67890</a> | 
+            Email: <a href="mailto:clinic@example.com">clinic@example.com</a>
+        </address>
+        <p><small>© 2026 Sunshine Wellness Clinic. All rights reserved. | <a href="#top">⬆️ Back to Top</a></small></p>
+    </footer>
+
+</body>
+</html>
